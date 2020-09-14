@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+
+  height: 100%;
+  background-color: white;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 48px;
+  text-decoration: none;
+  color: black;
+  line-height: 80px;
+}
+
+.languageIcon {
+  height: 10px;
+  display: inline-block;
+}
+
+.languageIcon img {
+  height: 10px;
+}
+
+.navLink:hover {
+  color: #ee6b4d;
+}
+
+.nav {
+  height: 100%;
+}
+.item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
