@@ -17,19 +17,28 @@ const Navbar = ({ t }) => {
     <div className={styles.navbar}>
       <nav className={styles.nav}>
         <div className={styles.item}>
-          <a href="#home" className={styles.navLink}>
+          <a href="#home" className={`${styles.navLink} ${styles.desktopMenu}`}>
             {t("home.label")}
           </a>
-          <a href="#pricing" className={styles.navLink}>
+          <a
+            href="#pricing"
+            className={`${styles.navLink} ${styles.desktopMenu}`}
+          >
             {t("pricing.label")}
           </a>
-          <a href="#about" className={styles.navLink}>
+          <a
+            href="#about"
+            className={`${styles.navLink} ${styles.desktopMenu}`}
+          >
             {t("about.label")}
           </a>
-          <a href="#contact" className={styles.navLink}>
+          <a
+            href="#contact"
+            className={`${styles.navLink} ${styles.desktopMenu}`}
+          >
             {t("contact.label")}
           </a>
-          <a href="#" className={styles.navLink}>
+          <a href="#" className={`${styles.navLink} ${styles.desktopMenu}`}>
             <span className={styles.languageIcon} onClick={changeLanguage}>
               <img src={lang === "us" ? "/img/hy.svg" : "/img/en.svg"} alt="" />
             </span>

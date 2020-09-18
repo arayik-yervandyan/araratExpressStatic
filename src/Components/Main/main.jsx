@@ -8,12 +8,14 @@ import HeroBaner from "../HeroBanner/hero-baner";
 import AboutUs from "../AboutUs/about-us";
 import ContactUs from "../ContactUs/contact-us";
 import "../../i18n";
+import SideBar from "../SideBar/side-bar";
 
 const Main = () => {
   return (
     <Suspense fallback={null}>
       <div className={styles.main}>
         <Header />
+        <SideBar />
         <HeroBaner />
         <Step />
         <AboutUs />

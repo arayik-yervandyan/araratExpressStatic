@@ -30,6 +30,12 @@
   "product2-title.label": "40lb և բարձր",
   "address.label": "Հասցե",
   "address-title.label": "104 stamford Square Englishtown NJ 07726",
-  "phone.label": "զանգահարել",
-  "email.label": "Էլ. փոստ"
+  "phone.label": "Զանգահարել",
+  "email.label": "Էլ. փոստ",
+  "address-title-usaName.label": "Գտեք մեզ ԱՄՆ - ում",
+  "address-title-name.label": "Գտեք մեզ Հայաստանում ",
+  "address-name.label": "Էրեբունի Ազատամարտիկների 78-1․25 բն․",
+  "service.label": "Ծառայության մասին",
+  "service-info.label": "Մենք  կվերցնենք ձեր փաթեթը անվճար մինչև 10 մղոն հեռավորությամբ տարածքից: Ավելի հեռու տարածքից վերցնելու դեպքում ՝ 1 դոլար 1 մղոնի դիմաց.",
+  "delivery-info.label": "Առաքումը Երևանում կլինի 500 դրամ։ Երևանից դուրս 500 դրամ 1կմ ի համար։."
 }

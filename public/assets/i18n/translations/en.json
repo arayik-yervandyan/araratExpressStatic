@@ -31,5 +31,11 @@
   "address.label": "ADDRESS",
   "address-title.label": "104 stamford Square Englishtown NJ 07726",
   "phone.label": "REACH US",
-  "email.label": "EMAIL"
+  "email.label": "EMAIL",
+  "address-title-usaName.label": "Find us in USA",
+  "address-title-name.label": "Find us in Armenia",
+  "address-name.label": "Erebuni Azatamartikneri 78/1.25bn",
+  "service.label": "Service Information",
+  "service-info.label": "We will take your package for free till 10 mile. Further away is 1$ for 1 mile.",
+  "delivery-info.label": "We will deliver your package for 500 dram  in Yerevan. Further away from Yerevan is  500 dram for 1 km."
 }

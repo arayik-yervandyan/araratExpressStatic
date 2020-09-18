@@ -45,6 +45,20 @@ const Pricing = ({ t }) => {
           <PricingItem item={item} key={index} />
         ))}
       </div>
+      <div className={styles.delivery}>
+        <div className={styles.deliveryTitle}>
+          <h2>{t("service.label")}</h2>
+          <span></span>
+        </div>
+        <div className={styles.deliveriInfo}>
+          <img src="img/info.png" alt="" />
+          <p>{t("service-info.label")}</p>
+        </div>
+        <div className={styles.deliveriInfo}>
+          <img src="img/info.png" alt="" />
+          <p>{t("delivery-info.label")}</p>
+        </div>
+      </div>
     </div>
   );
 };

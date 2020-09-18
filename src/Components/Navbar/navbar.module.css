@@ -14,6 +14,9 @@
   color: black;
   line-height: 80px;
 }
+.navLink:last-child {
+  margin-right: 24px;
+}
 
 .languageIcon {
   height: 10px;
@@ -35,4 +38,16 @@
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 743px) {
+  .desktopMenu {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .desktopMenu {
+    display: none;
+  }
 }

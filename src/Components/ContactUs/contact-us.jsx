@@ -13,10 +13,18 @@ const ContactUs = ({ t }) => {
         <div className={styles.info}>
           <div className={styles.adress}>
             <div className={styles.adressContainer}>
-              <h3>{t("address.label")}</h3>
-              <p>{t("address-title.label")}</p>
-              <h3> {t("phone.label")}</h3>
-              <p>+1 732 425 15 35</p>
+              <div>
+                <h3>{t("address.label")}</h3>
+                <h4>{t("address-title-usaName.label")}</h4>
+                <p>{t("address-title.label")}</p>
+                <h4>{t("address-title-name.label")}</h4>
+                <p>{t("address-name.label")}</p>
+              </div>
+              <div>
+                <h3> {t("phone.label")}</h3>
+                <p>+1 732 425 15 35</p>
+                <p>+374 55 11 22 77</p>
+              </div>
               <h3>{t("email.label")}</h3>
               <p>araratexpress@yahoo.com</p>
             </div>
