@@ -1,17 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import styles from "./navbar.module.css";
 import { withTranslation } from "react-i18next";
 import { useTranslation } from "react-i18next";
+import ReactFlagsSelect from 'react-flags-select';
+import 'react-flags-select/css/react-flags-select.css';
+
 
 const Navbar = ({ t }) => {
-  const [lang, setLang] = useState("us");
   const { i18n } = useTranslation();
-
-  const changeLanguage = () => {
-    const newLang = lang === "us" ? "am" : "us";
-    setLang(newLang);
-    i18n.changeLanguage(newLang);
+  const dropdown = React.createRef();
+  
+  const onSelectFlag = (countryCode) => {
+    i18n.changeLanguage(countryCode.toLowerCase());
   };
+
+  useEffect(() => {
+    let defaultCountry = i18n.language.toLocaleUpperCase();
+    defaultCountry = defaultCountry === 'EN' ? 'US' : defaultCountry;
+
+    dropdown.current.updateSelected(defaultCountry);
+  });
 
   return (
     <div className={styles.navbar}>
@@ -39,13 +47,11 @@ const Navbar = ({ t }) => {
             {t("contact.label")}
           </a>
           <a href="#" className={`${styles.navLink} ${styles.desktopMenu}`}>
-            <span className={styles.languageIcon} onClick={changeLanguage}>
-              <img src={lang === "us" ? "/img/hy.svg" : "/img/en.svg"} alt="" />
-            </span>
+          <ReactFlagsSelect ref={dropdown} defaultCountry="US"  showSelectedLabel={false} onSelect={onSelectFlag} showOptionLabel={false} countries={["US", "RU", "AM"]} />
           </a>
         </div>
       </nav>
-    </div>
+    </div>  
   );
 };
 

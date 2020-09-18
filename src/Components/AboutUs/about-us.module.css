@@ -9,6 +9,8 @@
   max-width: 1200px;
   display: flex;
   flex-direction: row;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .aboutUsInfo {
@@ -68,7 +70,6 @@
   .AboutUsContainer {
     flex-direction: column;
     justify-content: center;
-    margin-left: 24px;
   }
   .aboutUsImg {
     display: none;
