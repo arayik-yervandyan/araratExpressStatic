@@ -6,34 +6,52 @@ import { withTranslation } from "react-i18next";
 const Pricing = ({ t }) => {
   const pricingData = [
     {
-      price: 12,
+      price: "12$ / 1lb",
       productWeight: t("product-weight-title.label"),
       country: t("country-title.label"),
       duration: t("duration-title.label"),
-      takeFromHome: t("take-from-title.label"),
+      delivery: "airplane",
     },
     {
-      price: 6,
+      price: "6$ / 1lb",
       productWeight: "2lb - 20lb",
       country: t("country-title.label"),
       duration: t("duration-title.label"),
-      takeFromHome: t("take-from-title.label"),
+      delivery: "airplane",
     },
     {
-      price: 5.5,
+      price: "5.5$ / 1lb",
       productWeight: "20lb - 40lb",
       country: t("country-title.label"),
       duration: t("duration-title.label"),
-      takeFromHome: t("take-from-title.label"),
+      delivery: "airplane",
     },
     {
-      price: 5,
+      price: "5$ / 1lb",
       productWeight: t("product2-title.label"),
       country: t("country-title.label"),
       duration: t("duration-title.label"),
-      takeFromHome: t("take-from-title.label"),
+      delivery: "airplane",
     },
   ];
+
+  const shipData = [
+    {
+      price: `40$ ${t("ship-price-fixed.label")}`,
+      productWeight: t("ship-weight-title.label"),
+      country: t("country-title.label"),
+      duration: t("duration-title.label"),
+      delivery: "ship",
+    },
+    {
+      price: "4$ / 1lb",
+      productWeight: t("ship1-weight-title.label"),
+      country: t("country-title.label"),
+      duration: t("duration-title.label"),
+      delivery: "ship",
+    },
+  ];
+
   return (
     <div id="pricing" className={styles.pricing}>
       <div className={styles.pricingSubtitle}>
@@ -45,19 +63,11 @@ const Pricing = ({ t }) => {
           <PricingItem item={item} key={index} />
         ))}
       </div>
-      <div className={styles.delivery}>
-        <div className={styles.deliveryTitle}>
-          <h2>{t("service.label")}</h2>
-          <span></span>
-        </div>
-        <div className={styles.deliveriInfo}>
-          <img src="img/info.png" alt="" />
-          <p>{t("service-info.label")}</p>
-        </div>
-        <div className={styles.deliveriInfo}>
-          <img src="img/info.png" alt="" />
-          <p>{t("delivery-info.label")}</p>
-        </div>
+
+      <div className={styles.pricingContainer}>
+        {shipData.map((item, index) => (
+          <PricingItem item={item} key={index} />
+        ))}
       </div>
     </div>
   );

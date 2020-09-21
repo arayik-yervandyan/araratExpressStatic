@@ -9,9 +9,9 @@ const PricingItem = (props) => {
       <div className={styles.pricingItem}>
         <div className={`${styles.price} ${styles.item}`}>
           <div>{props.item.price}</div>
-          <div className={styles.key}>$</div>
+          <div className={styles.key}></div>
         </div>
-        <div>
+        <div className={styles.pricingInfoBlock}>
           <div className={`${styles.productWeight} ${styles.item}`}>
             <div className={styles.key}> {t("product-weight.label")} </div>
             <div> {props.item.productWeight}</div>
@@ -23,6 +23,12 @@ const PricingItem = (props) => {
           <div className={`${styles.duration} ${styles.item}`}>
             <div className={styles.key}>{t("duration.label")}</div>
             <div>{props.item.duration}</div>
+          </div>
+          <div className={`${styles.delivery} ${styles.item}`}>
+            <div className={styles.key}>{t("delivery-type.label")}: </div>
+            <div>
+              <img src={`/img/${props.item.delivery}.png`} alt="" />
+            </div>
           </div>
         </div>
         <div className={`${styles.contactUs} ${styles.item}`}>

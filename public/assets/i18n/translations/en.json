@@ -37,5 +37,10 @@
   "address-name.label": "Erebuni Azatamartikneri 78/1.25bn",
   "service.label": "Service Information",
   "service-info.label": "We will take your package for free till 10 mile. Further away is 1$ for 1 mile.",
-  "delivery-info.label": "We will deliver your package for 500 dram  in Yerevan. Further away from Yerevan is  500 dram for 1 km."
+  "delivery-info.label": "We will deliver your package for 500 dram  in Yerevan. Further away from Yerevan is  500 dram for 1 km.",
+  "delivery-type.label": "Delivery Type",
+  "ship-info.label": "Shipping with a ship is 4$ for 1 lb. The minimum price is 40$",
+  "ship-price-fixed.label": "Fixed",
+  "ship-weight-title.label": "up to 10lb",
+  "ship1-weight-title.label": "aove 10lb"
 }

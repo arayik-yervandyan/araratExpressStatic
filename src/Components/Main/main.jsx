@@ -7,6 +7,7 @@ import Step from "../Step/step";
 import HeroBaner from "../HeroBanner/hero-baner";
 import AboutUs from "../AboutUs/about-us";
 import ContactUs from "../ContactUs/contact-us";
+import ServiceInfo from "../ServiceInfo/service-info";
 import "../../i18n";
 import SideBar from "../SideBar/side-bar";
 
@@ -19,6 +20,7 @@ const Main = () => {
         <HeroBaner />
         <Step />
         <AboutUs />
+        <ServiceInfo />
         <Pricing />
         <ContactUs />
         <Footer />

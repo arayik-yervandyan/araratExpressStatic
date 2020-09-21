@@ -50,7 +50,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 40px 56px;
-  height: 150px;
+  height: 200px;
 }
 
 .number {
@@ -68,7 +68,7 @@
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 40px;
-  padding: 8px 24px;
+  padding: 8px 12px;
   border: 2px solid #293241;
   transition: background-color 0.3s, color 0.3s ease;
   position: relative;
@@ -109,6 +109,4 @@
   .stepItemContainer {
     margin-bottom: 24px;
   }
-
- 
 }
