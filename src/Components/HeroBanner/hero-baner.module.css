@@ -35,7 +35,8 @@
     margin-left: 0;
   }
   .heroBanerText h1 {
-    font-size: 30px;
+    font-size: 40px !important;
+    margin: 24px;
   }
   .heroBanerBtn {
     text-align: center;
